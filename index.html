@@ -2,11 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/src/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Art Gallery Website</title>
   </head>
   <body>
+    <main class="container">
+      <div class="wrapper">
+        <header class="hero">
+          <div class="hero__logo">
+            <img src="/assets/logo-dark.svg" alt="Moder Art Gallery logo" />
+          </div>
+          <div class="hero-image">
+            <picture>
+              <source
+                srcset="/assets/desktop/image-hero.jpg"
+                media="(min-width:1024px)"
+              />
+              <source
+                srcset="/assets/tablet/image-hero.jpg"
+                media="(min-width:768px)"
+              />
+              <img
+                src="/assets/mobile/image-hero.jpg"
+                alt="Two people observing a portrait"
+              />
+            </picture>
+          </div>
+          <div class="hero__details">
+            <p class="hero__description">
+              The arts in the collection of the Modern Art Gallery all started
+              from a spark of inspiration. Will these pieces inspire you? Visit
+              us and find out.
+            </p>
+            <a href="location.html" class="btn"
+              >OUR LOCATION <img src="/assets/icon-arrow-right.svg" alt="icon-right"
+            /></a>
+          </div>
+        </header>
+      </div>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
