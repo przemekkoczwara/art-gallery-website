@@ -1,0 +1,66 @@
+@use '../variables/variables' as v;
+@use '../core/reset';
+
+// .btn {
+//   display: inline-flex;
+//   align-items: center;
+// //   justify-content: ;
+//   font-family: v.$font-main;
+//   font-weight: v.$font-weight-extrabold;
+//   font-size: v.$font-size-20;
+//   letter-spacing: 3.6px;
+//   color: v.$white;
+//   width: fit-content;
+//   background-color: v.$grey-900;
+//   padding: 0 v.$spacing-32 0;
+//   transition: background-color 0.3s ease, color 0.3s ease;
+//   cursor: pointer;
+//   gap: 24px;
+
+//   &:hover {
+//     background-color: v.$gold;
+//   }
+// }
+
+// .btn-arrow {
+//   background-color: v.$gold;
+//   padding: 24px;
+// }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  font-family: v.$font-main;
+  font-weight: v.$font-weight-extrabold;
+  font-size: v.$font-size-20;
+  letter-spacing: 3.6px;
+  color: v.$white;
+  width: fit-content;
+  background-color: v.$grey-900;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-text {
+  padding: 24px 32px;
+  display: inline-block;
+  background-color: v.$grey-900;
+}
+
+.btn-arrow {
+  display: flex;
+  align-items: center;
+  background-color: v.$gold;
+  padding: 24px;
+}
+
+.btn:hover {
+  background-color: v.$white;
+}
+
+.btn:hover .btn-arrow {
+  background-color: v.$grey-900;
+}
+
+.btn:hover .btn-text {
+  background-color: v.$gold;
+}
