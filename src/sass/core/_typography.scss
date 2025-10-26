@@ -1,0 +1,17 @@
+@use '../variables/variables' as v;
+@use '../core/reset';
+
+.text__hero-title {
+  font-family: v.$font-main;
+  font-size: v.$font-size-60;
+  font-weight: v.$font-weight-bold;
+  line-height: v.$line-hight-9;
+}
+
+.text__hero {
+  font-family: v.$font-outfit;
+  font-size: v.$font-size-18;
+  font-weight: v.$font-weight-light;
+  line-height: v.$line-hight-140;
+  color: v.$grey-700;
+}

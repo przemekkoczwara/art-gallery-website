@@ -1,2 +1,13 @@
-@use 'reset';
-@use 'variables';
+@use '../variables/variables' as v;
+@use '../core/reset';
+
+.container {
+  display: flex;
+  justify-content: center;
+//   align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: white;
+  color: v.$grey-900;
+}
+
