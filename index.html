@@ -5,15 +5,18 @@
     <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Art Gallery Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz@10..72&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="container">
       <div class="wrapper">
         <header class="hero">
-          <div class="hero__logo">
-            <img src="/assets/logo-dark.svg" alt="Moder Art Gallery logo" />
-          </div>
-          <div class="hero-image">
+          <div class="hero__image">
             <picture>
               <source
                 srcset="/assets/desktop/image-hero.jpg"
@@ -30,14 +33,18 @@
             </picture>
           </div>
           <div class="hero__details">
-            <p class="hero__description">
+            <h1 class="hero__title text__hero-title">MODERN ART GALLERY</h1>
+            <p class="hero__description text__hero">
               The arts in the collection of the Modern Art Gallery all started
               from a spark of inspiration. Will these pieces inspire you? Visit
               us and find out.
             </p>
-            <a href="location.html" class="btn"
-              >OUR LOCATION <img src="/assets/icon-arrow-right.svg" alt="icon-right"
-            /></a>
+            <a href="location.html" class="btn">
+              <span class="btn-text">OUR LOCATION</span>
+              <span class="btn-arrow btn-text">
+                <img src="public/assets/icon-arrow-right.svg" alt="btn-arrow" />
+              </span>
+            </a>
           </div>
         </header>
       </div>
