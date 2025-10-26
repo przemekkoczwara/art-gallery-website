@@ -1,0 +1,15 @@
+@use '../variables/variables' as v;
+@use '../core/reset';
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+}
+
+.hero__details {
+  padding: 2rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: v.$spacing-32;
+}
